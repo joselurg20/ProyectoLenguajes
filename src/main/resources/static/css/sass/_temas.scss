@@ -1,0 +1,134 @@
+
+body {
+  @include body;
+}
+
+.title {
+  @include title;
+}
+
+.menu {
+  @include navbar;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin-right: 10px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+.search-form {
+  display: flex;
+
+  input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: beige;
+    border-color: beige;
+    border: none;
+    color: green;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.books {
+  padding: 10px;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  }
+
+  .addlibro {
+    a {
+      color: black;
+
+    }
+  }
+}
+.publicidad {
+  background-color: $dto;
+  padding-inline-start: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.recomendaciones {
+  .autores {
+
+  }
+}
+
+.image-with-description {
+  display: flex;
+  align-items: center;
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+
+  .imagen {
+    height: 203px;
+  }
+
+  .description {
+    margin-left: 10px; /* Ajusta el margen según tus necesidades */
+    display: flex;
+  }
+}
+
+.recomendaciones {
+  .autores {
+
+  }
+}
+
+.image-with-autor {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center; /* Centrar verticalmente */
+
+  .imagen {
+    height: 203px;
+  }
+
+  .description {
+    margin-left: 10px; /* Ajusta el margen según tus necesidades */
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Books</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>The Odyssey bookstore</h1>
+    </div>
+    <div class="wrapper">
+        <!--Menu-->
+
+        </nav>
+        <div class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/books">Show Books</a></li>
+                <li><a href="/books/new">Add Book</a></li>
+                <li><a href="/books/edit/{isbn}">Edit Book</a></li>
+
+            </ul>
+
+            <form action="/buscar" method="GET" class="search-form">
+                <input type="text" name="query" placeholder="Ingresa tu búsqueda" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="bg-text">
+            <div class="row">
+                <h1 class="title-form">Editar Libro</h1>
+                <div class="card-body">
+                    <form action="/books/edit/{isbn}" method="POST">
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input type="text" name="Title" class="form-control" placeholder="Introduce el título"
+                                th:value="${book.Title}" />
+                        </div>
+                        <div class="form-group">
+                            <label>Autor</label>
+                            <input type="text" name="Autor" class="form-control" placeholder="Introduce el autor"
+                                th:value="${book.Autor}" />
+                        </div>
+                        <div class="form-group">
+                            <label>Precio</label>
+                            <input type="text" name="Price" class="form-control" placeholder="Introduce el precio"
+                                th:value="${book.Price}" />
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn btn-primary">Guardar</button>
+                            <button type="button" class="btn btn-secondary">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <hr>
+    <p>Copyright © 2023 The Odyssey bookstore. Todos los derechos reservados</p>
+
+
+</body>
+
+</html>

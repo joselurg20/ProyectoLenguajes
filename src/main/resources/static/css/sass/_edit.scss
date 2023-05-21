@@ -1,0 +1,86 @@
+body {
+  @include body;
+}
+
+.title {
+  @include title;
+}
+
+.menu {
+  @include navbar;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin-right: 10px;
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+.bg-text {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+
+  .row {
+    background-color: #2497B5;
+    padding: 30px;
+    color: white;
+    width: 500px;
+    margin: 0 auto;
+
+    .title-form {
+      text-align: center;
+    }
+
+    .card-body {
+      background-color:$primary-color;
+      padding: 20px;
+      text-align: center;
+      color: beige;
+    }
+
+    .form-group {
+      padding: 10px;
+
+      input {
+        padding: 5px;
+        border-color: white;
+      }
+    }
+
+    .form-control {
+      background-color: aliceblue;
+      border-radius:  $default-border-radius;
+    }
+
+    .btnA {
+      color: beige;
+      background-color: $accent-color;
+      border-radius:$default-border-radius;
+      box-shadow: none;
+      border: $accent-color;
+      font-size: 1rem;
+    }
+    
+  }
+  .btnB {
+    color: beige;
+    background-color:$accent-color;
+    border-radius: $default-border-radius;
+    box-shadow: none;
+    border:$accent-color;
+    font-size: 1rem;
+  }
+
+  
+}
+

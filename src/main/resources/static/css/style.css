@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.books tr:nth-child(1) {
+  background-color: darkgrey;
+}
+.books tr:nth-child(2) {
+  background-color: white;
+}
+.books tr:nth-child(3) {
+  background-color: darkgrey;
+}
+.books tr:nth-child(4) {
+  background-color: white;
+}
+.books tr:nth-child(5) {
+  background-color: darkgrey;
+}
+.books tr:nth-child(6) {
+  background-color: white;
+}
+.books tr:nth-child(7) {
+  background-color: darkgrey;
+}
+.books tr:nth-child(8) {
+  background-color: white;
+}
+.books tr:nth-child(9) {
+  background-color: darkgrey;
+}
+.books tr:nth-child(10) {
+  background-color: white;
+}
+
+body {
+  background-color: #4282A6;
+  font-size: 20px;
+  fotn-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  color: beige;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5B863;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 10px;
+}
+.menu ul li a {
+  color: black;
+}
+
+.search-form {
+  display: flex;
+}
+.search-form input[type=text] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+.search-form button {
+  padding: 5px 10px;
+  background-color: beige;
+  border-color: beige;
+  border: none;
+  color: green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.books {
+  padding: 10px;
+}
+.books table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px;
+}
+.books table th,
+.books table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.books table th {
+  background-color: #f2f2f2;
+}
+.books .addlibro a {
+  color: black;
+}
+
+.publicidad {
+  background-color: #A67532;
+  padding-inline-start: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.image-with-description {
+  display: flex;
+  align-items: center;
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+}
+.image-with-description .imagen {
+  height: 203px;
+}
+.image-with-description .description {
+  margin-left: 10px; /* Ajusta el margen según tus necesidades */
+  display: flex;
+}
+
+.image-with-autor {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center; /* Centrar verticalmente */
+}
+.image-with-autor .imagen {
+  height: 203px;
+}
+.image-with-autor .description {
+  margin-left: 10px; /* Ajusta el margen según tus necesidades */
+  display: flex;
+}
+
+.footer {
+  background-color: #F5F5F5;
+}
+
+body {
+  background-color: #4282A6;
+  font-size: 20px;
+  fotn-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  color: beige;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5B863;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 10px;
+}
+.menu ul li a {
+  color: black;
+}
+
+.bg-text {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bg-text .row {
+  background-color: #2497B5;
+  padding: 30px;
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+}
+.bg-text .row .title-form {
+  text-align: center;
+}
+.bg-text .row .card-body {
+  background-color: #2497B5;
+  padding: 20px;
+  text-align: center;
+  color: beige;
+}
+.bg-text .row .form-group {
+  padding: 10px;
+}
+.bg-text .row .form-group input {
+  padding: 5px;
+  border-color: white;
+}
+.bg-text .row .form-control {
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+.bg-text .row .btnA {
+  color: beige;
+  background-color: #3EB39F;
+  border-radius: 5px;
+  box-shadow: none;
+  border: #3EB39F;
+  font-size: 1rem;
+}
+
+body {
+  background-color: #4282A6;
+  font-size: 20px;
+  fotn-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  color: beige;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5B863;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu ul li {
+  margin-right: 10px;
+}
+.menu ul li a {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
