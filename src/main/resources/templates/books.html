@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Books</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>The Odyssey bookstore</h1>
+    </div>
+    <div class="wrapper">
+        <!--Menu-->
+
+        </nav>
+        <div class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/books">Show Books</a></li>
+                <li><a href="/books/new">Add Book</a></li>
+                <li><a href="/books/edit">Edit Book</a></li>
+
+            </ul>
+
+            <form action="/buscar" method="GET" class="search-form">
+                <input type="text" name="query" placeholder="Ingresa tu búsqueda" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+    </div>
+    <div class="books">
+        <table>
+            <tr>
+                <th>ISBN</th>
+                <th>Titulo</th>
+                <th>Autor</th>
+                <th>Precio en €</th>
+            </tr>
+            <tr th:each="book,iter: ${books}">
+                <td th:text="${book.isbn}"></td>
+                <td th:text="${book.Title}"></td>
+                <td th:text="${book.Autor}"></td>
+                <td th:text="${book.Price}"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="publicidad">
+        <h3>Libros con 5% dto.</h3>
+        <p>Lo que no querrás perderte este mes con 5% dto. y envíos GRATIS si eres Socio.</p>
+
+    </div>
+    <div class="recomendaciones">
+        <h4>Libros mas vendidos</h4>
+        <div class="image-with-description">
+
+            <img src="img/Mein-Kampf-i7n12743591.jpg" alt="Descripción de la imagen" class="imagen">
+            <div class="description">
+                <p>Mein Kampf, la nueva saga de Federico García Lorca</p>
+            </div>
+            <div class="image-with-description">
+                <img src="img/71FirElmnqL.jpg" alt="Descripción de la imagen" class="imagen">
+                <div class="description">
+                    <p>Arbol de la ciencia, escrito por Pio Baroja</p>
+                </div>
+            </div>
+            <div class="image-with-description">
+                <img src="img/41wljRPz3KL._SX303_BO1,204,203,200_.jpg" alt="Descripción de la imagen" class="imagen">
+                <div class="description">
+                    <p>Arbol de la ciencia, escrito por Pio Baroja</p>
+                </div>
+            </div>
+            <div class="image-with-description">
+                <img src="img/41igpKkTiSL.jpg" alt="Descripción de la imagen" class="imagen">
+                <div class="description">
+                    <p>Arbol de la ciencia, escrito por Pio Baroja</p>
+                </div>
+            </div>
+        </div>
+        <h4>Autores mas destacados</h4>
+        <div class="autores">
+            <div class="image-with-autor">
+                <img src="img/Diego_Rodríguez_de_Silva_y_Velázquez_-_Luis_de_Góngora_y_Argote_-_Google_Art_Project.jpg"
+                    alt="Descripción de la imagen" class="imagen">
+                <div class="description">
+                    <p>Autor: Luis de Gongora </p>
+                </div>
+                <div class="image-with-autor">
+                    <img src="img/descarga.jpeg" alt="Descripción de la imagen" class="imagen">
+                    <div class="description">
+                        <p>Autor: José Ortega y Gasset</p>
+                    </div>
+                </div>
+                <div class="image-with-autor">
+                    <img src="img/Mary_Wollstonecraft_Shelley_Rothwell.tif.jpg" alt="Descripción de la imagen"
+                        class="imagen">
+                    <div class="description">
+                        <p>Autor: Mary Shelley</p>
+                    </div>
+                </div>
+                <div class="image-with-autor">
+                    <img src="img/JOANA-MARCUS-BIO.jpg" alt="Descripción de la imagen" class="imagen">
+                    <div class="description">
+                        <p>Autor: Joana Marcus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <p>Copyright © 2023 The Odyssey bookstore. Todos los derechos reservados</p>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+@mixin navbar{ //mixin porque todas las vistas tienen la mismas partes practicamente
+    display: flex;
+    justify-content: space-between;
+    background-color: $navbar;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@mixin body{
+    background-color: $background-color;
+    font-size: $font-size;
+    fotn-family:$body-font ;
+}
+
+   
+@mixin title {
+    color: beige;
+    text-align: center;
+  }

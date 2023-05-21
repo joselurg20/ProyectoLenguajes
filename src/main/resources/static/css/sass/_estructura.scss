@@ -1,0 +1,13 @@
+.books{
+    @for $i from 1 through 10 { //Un bucle de 1 a 10.
+
+        tr:nth-child(#{$i}){
+            @if $i%2 == 0{
+                background-color:$tr-par;
+            }@else{
+                background-color:$tr-impar;
+            }
+        }
+
+    }
+}
